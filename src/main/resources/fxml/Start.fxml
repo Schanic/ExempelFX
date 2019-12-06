@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="526.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.exempelfx.FXMLController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Button fx:id="addList" layoutX="100.0" layoutY="436.0" mnemonicParsing="false" onAction="#inputLista" text="Add" />
+      <Button fx:id="TableButton" layoutX="313.0" layoutY="436.0" mnemonicParsing="false" onAction="#ChangeScreenButtonPushed" text="Table" />
+      <Label layoutX="42.0" layoutY="103.0" prefHeight="33.0" prefWidth="63.0" text="Name" />
+      <TextField fx:id="inputName" layoutX="131.0" layoutY="107.0" />
+      <TextField fx:id="inputRelease" layoutX="131.0" layoutY="156.0" />
+      <Label layoutX="42.0" layoutY="160.0" prefHeight="17.0" prefWidth="85.0" text="Released date" />
+      <Label layoutX="42.0" layoutY="213.0" prefHeight="17.0" prefWidth="63.0" text="Box office" />
+      <TextField fx:id="inputboxOffice" layoutX="131.0" layoutY="209.0" />
+      <TextField fx:id="inputgenre" layoutX="131.0" layoutY="263.0" />
+      <Label layoutX="42.0" layoutY="267.0" prefHeight="17.0" prefWidth="63.0" text="genre" />
+      <Label layoutX="163.0" layoutY="14.0" prefHeight="17.0" prefWidth="149.0" text="Register a movie" />
+      <TextField fx:id="inputstudioid" layoutX="121.0" layoutY="329.0" />
+      <Label layoutX="42.0" layoutY="312.0" prefHeight="17.0" prefWidth="63.0" text="Studio id" />
+      
+    </children>
+</AnchorPane>

@@ -1,0 +1,5 @@
+com\mycompany\exempelfx\MainApp.class
+com\mycompany\exempelfx\entities\Movie.class
+com\mycompany\exempelfx\bean\BilBean.class
+com\mycompany\exempelfx\ConnectionFactory.class
+com\mycompany\exempelfx\FXMLController.class
