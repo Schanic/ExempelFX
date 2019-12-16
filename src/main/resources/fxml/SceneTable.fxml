@@ -10,5 +10,9 @@
    <children>
       <TextArea fx:id="textTable" layoutX="24.0" layoutY="14.0" prefHeight="370.0" prefWidth="285.0" />
       <Button layoutX="497.0" layoutY="14.0" mnemonicParsing="false" onAction="#MainMenu" text="Main menu" />
+      <Button fx:id="ButtonGetAllMovies" layoutX="469.0" layoutY="60.0" mnemonicParsing="false" onAction="#GetAllMovies" prefHeight="25.0" prefWidth="105.0" text="Get all movies" />
+      <Button layoutX="438.0" layoutY="208.0" mnemonicParsing="false" onAction="#ButtonSearchMovie" text="Search" />
+      <TextField fx:id="SearchMovie" layoutX="341.0" layoutY="165.0" prefHeight="25.0" prefWidth="245.0" />
+      <Label layoutX="408.0" layoutY="131.0" prefHeight="17.0" prefWidth="112.0" text="Search movie name" />
    </children>
 </AnchorPane>

@@ -11,13 +11,13 @@ package com.mycompany.exempelfx.entities;
  */
 public class Movie {
     private int id;
-    private int name;
-    private String released;
-    private String box_office;
-    private int genre;
+    private String name;
+    private int released;
+    private int box_office;
+    private String genre;
     private int studio_id;
 
-    public Movie(int id, int name, String released, String box_office, int genre, int studio_id) {
+    public Movie(int id, String name, int released, int box_office, String genre, int studio_id) {
         this.id = id;
         this.name = name;
         this.released = released;
@@ -30,19 +30,19 @@ public class Movie {
         return id;
     }
 
-    public int getName() {
+    public String getName() {
         return name;
     }
 
-    public String getReleased() {
+    public int getReleased() {
         return released;
     }
 
-    public String getBox_office() {
+    public int getBox_office() {
         return box_office;
     }
 
-    public int getGenre() {
+    public String getGenre() {
         return genre;
     }
 
@@ -54,24 +54,29 @@ public class Movie {
         this.id = id;
     }
 
-    public void setName(int name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public void setReleased(String released) {
+    public void setReleased(int released) {
         this.released = released;
     }
 
-    public void setBox_office(String box_office) {
+    public void setBox_office(int box_office) {
         this.box_office = box_office;
     }
 
-    public void setGenre(int genre) {
+    public void setGenre(String genre) {
         this.genre = genre;
     }
 
     public void setStudio_id(int studio_id) {
         this.studio_id = studio_id;
+    }
+
+    @Override
+    public String toString() {
+        return id + " " + name + " " + released + " " + box_office + " " + genre + " " + studio_id ;
     }
 
  
