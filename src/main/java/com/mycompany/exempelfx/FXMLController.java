@@ -3,6 +3,7 @@ package com.mycompany.exempelfx;
 import com.mycompany.exempelfx.entities.Movie;
 import com.mycompany.exempelfx.bean.SaveMovie;
 import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.StringUtils;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.ResultSet;
@@ -92,7 +93,9 @@ public class FXMLController implements Initializable {
         try (Connection connection = ConnectionFactory.getConnection()){
             System.out.println("Hello2");
             Statement statement = connection.createStatement();
-            String sql = String.format("SELECT * FROM movies WHERE name = '%s'", inputname);
+            String sql = String.format("SELECT * FROM movies WHERE name LIKE '%s", inputname);
+            sql += "%'";
+            System.out.println(sql);
             ResultSet data = statement.executeQuery(sql);
             while (data.next()){
                 int id = data.getInt("id");
