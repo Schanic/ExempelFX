@@ -99,7 +99,6 @@ public class FXMLController implements Initializable {
             ResultSet data = statement.executeQuery(sql);
             while (data.next()){
                 int id = data.getInt("id");
-                System.out.println("Hello3");
                     String name = data.getString("name");
                     int released = data.getInt("released");
                     int boxOff = data.getInt("box_office");
